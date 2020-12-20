@@ -15,6 +15,8 @@
 		4FA435A7258F2D4300EAC5F6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4FA435A5258F2D4300EAC5F6 /* LaunchScreen.storyboard */; };
 		4FA435B2258F2D4400EAC5F6 /* XCTestDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA435B1258F2D4400EAC5F6 /* XCTestDemoTests.swift */; };
 		4FA435BD258F2D4400EAC5F6 /* XCTestDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA435BC258F2D4400EAC5F6 /* XCTestDemoUITests.swift */; };
+		4FA435CE258F308400EAC5F6 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA435CD258F308400EAC5F6 /* User.swift */; };
+		4FA435D3258F310500EAC5F6 /* ValidationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA435D2258F310500EAC5F6 /* ValidationService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		4FA435B8258F2D4400EAC5F6 /* XCTestDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XCTestDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4FA435BC258F2D4400EAC5F6 /* XCTestDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCTestDemoUITests.swift; sourceTree = "<group>"; };
 		4FA435BE258F2D4400EAC5F6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4FA435CD258F308400EAC5F6 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		4FA435D2258F310500EAC5F6 /* ValidationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidationService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,12 +103,12 @@
 		4FA43599258F2D3F00EAC5F6 /* XCTestDemo */ = {
 			isa = PBXGroup;
 			children = (
-				4FA4359A258F2D3F00EAC5F6 /* AppDelegate.swift */,
-				4FA4359C258F2D3F00EAC5F6 /* SceneDelegate.swift */,
-				4FA4359E258F2D3F00EAC5F6 /* ViewController.swift */,
-				4FA435A0258F2D3F00EAC5F6 /* Main.storyboard */,
+				4FA435DC258F316A00EAC5F6 /* Service */,
+				4FA435DB258F316200EAC5F6 /* ViewController */,
+				4FA435DA258F315400EAC5F6 /* Entity */,
+				4FA435D9258F313700EAC5F6 /* Scene */,
+				4FA435D7258F311300EAC5F6 /* SupportingFiles */,
 				4FA435A3258F2D4300EAC5F6 /* Assets.xcassets */,
-				4FA435A5258F2D4300EAC5F6 /* LaunchScreen.storyboard */,
 				4FA435A8258F2D4300EAC5F6 /* Info.plist */,
 			);
 			path = XCTestDemo;
@@ -126,6 +130,48 @@
 				4FA435BE258F2D4400EAC5F6 /* Info.plist */,
 			);
 			path = XCTestDemoUITests;
+			sourceTree = "<group>";
+		};
+		4FA435D7258F311300EAC5F6 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				4FA4359A258F2D3F00EAC5F6 /* AppDelegate.swift */,
+				4FA4359C258F2D3F00EAC5F6 /* SceneDelegate.swift */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		4FA435D9258F313700EAC5F6 /* Scene */ = {
+			isa = PBXGroup;
+			children = (
+				4FA435A0258F2D3F00EAC5F6 /* Main.storyboard */,
+				4FA435A5258F2D4300EAC5F6 /* LaunchScreen.storyboard */,
+			);
+			path = Scene;
+			sourceTree = "<group>";
+		};
+		4FA435DA258F315400EAC5F6 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				4FA435CD258F308400EAC5F6 /* User.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		4FA435DB258F316200EAC5F6 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				4FA4359E258F2D3F00EAC5F6 /* ViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		4FA435DC258F316A00EAC5F6 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				4FA435D2258F310500EAC5F6 /* ValidationService.swift */,
+			);
+			path = Service;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,6 +304,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4FA435CE258F308400EAC5F6 /* User.swift in Sources */,
+				4FA435D3258F310500EAC5F6 /* ValidationService.swift in Sources */,
 				4FA4359F258F2D3F00EAC5F6 /* ViewController.swift in Sources */,
 				4FA4359B258F2D3F00EAC5F6 /* AppDelegate.swift in Sources */,
 				4FA4359D258F2D3F00EAC5F6 /* SceneDelegate.swift in Sources */,
