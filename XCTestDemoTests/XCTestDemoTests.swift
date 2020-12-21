@@ -29,5 +29,22 @@ class XCTestDemoTests: XCTestCase {
             // Put the code you want to measure the time of here.
         }
     }
+    
+    func test_should_download_data_successfully() {
+        var downloadedData : Data?
+        
+        let exp = expectation(description: "Download apple.com data")
+        let url = URL(string: "https://apple.com")!
+        
+        URLSession.shared.dataTask(with: url) { (data, _, _) in
+            downloadedData = data
+            XCTAssertNotNil(data, "No data was downloaded")
+            exp.fulfill()
+            
+        }.resume()
+        
+        XCTAssertNil(downloadedData)
+        wait(for: [exp], timeout: 10.0)
+    }
 
 }
